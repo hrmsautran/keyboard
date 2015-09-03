@@ -1,2 +1,2 @@
 # keyboard
-Keyboad Exemple
+Keyboad Example
