@@ -1,41 +1,13 @@
 $(function(){
-
-    var dials = $(".dials ol li");
-    var index;
+var index = "";
     var number = $(".number");
     var total;
 
-    dials.click(function(){
+    $(".digits").click(function(){
 
-        index = dials.index(this);
+        index = $(this).text();
 
-        if(index == 9){
-
-            number.append("*");
-
-        }else if(index == 10){
-
-            number.append("0");
-
-        }else if(index == 11){
-
-            number.append("#");
-
-        }else if(index == 12){
-
-            number.empty();
-
-        }else if(index == 13){
-
-            total = number.text();
-            total = total.slice(0,-1);
-            number.empty().append(total);
-
-        }else if(index == 14){
-
-            //add any call action here
-
-        }else{ number.append(index+1); }
+        number.append(index);
     });
 
     $(document).keydown(function(e){

@@ -1,0 +1,65 @@
+body{
+	background-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    background-color: #475264;
+
+    background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.panel-default{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.digits{
+	width: 80px;
+	height: 80px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    border: 1px solid #9e9e9e;
+    -webkit-border-radius: 999px;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn
+{
+    font-weight: bold;
+    -webkit-transition: .1s ease-in background-color;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    outline:none;
+}
+.btn:hover
+{
+    transition-property: background-color .2s linear 0s;
+    -moz-transition: background-color .2s linear 0s;
+    -webkit-transition: background-color .2s linear 0s;
+    -o-transition: background-color .2s linear 0s;
+}
+
+.block-input{
+	height: 400px;
+	background-image: url(../img/sus.png);
+}
